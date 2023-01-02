@@ -1,0 +1,39 @@
+Question No 1
+--------------------------------------------------------------------------------------------------
+a) select TO_CHAR(SYSDATE, 'YYYY.MM.DD') from dual; 
+b) select ename,sal from emp order by sal;
+c) select * from emp where comm>sal;
+d) select distinct(dname)from dept;
+e) select  ename from emp where job='MANAGER';
+f) select sum(sal) from emp group by deptno having deptno=40;  
+g) select ename from emp where ename like 'S%';
+h) select * from emp where deptno=20 or deptno=40;
+i)select ename from emp where ename like '_____';
+--------------------------------------------------------------------------------------------------
+
+
+Question No 2
+--------------------------------------------------------------------------------------------------
+1) select * from emp;
+2) select * from dept;
+3) select * from emp where deptno=20;
+4)  select * from emp order by sal desc;
+5) select min(sal),sum(sal),avg(sal) from emp group by deptno;
+6) select count(job) from emp group by job;
+7)  select min(sal),sum(sal),avg(sal) from emp group by job;   
+8) select * from emp where job='CLERK';
+9) select count(ename) from emp group by deptno;
+10) select dname from dept where deptno in ( select deptno from emp where job = 'CLERK' group by deptno having count(*)>=2);
+
+
+
+
+
+
+
+
+
+
+
+
+
